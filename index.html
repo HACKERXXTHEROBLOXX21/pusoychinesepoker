@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pusoy Chinese Poker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pusoy Chinese Poker</h1>
+  <button onclick="startGame()">Start Game</button>
+
+  <div id="game">
+    <h2>Your Hand</h2>
+    <div id="hand" class="cards"></div>
+
+    <h3>Arrange Your Cards</h3>
+    <div id="arrange">
+      <div class="zone" id="top">Top (3 cards)</div>
+      <div class="zone" id="middle">Middle (5 cards)</div>
+      <div class="zone" id="bottom">Bottom (5 cards)</div>
+    </div>
+
+    <button onclick="validateSets()">Finish Turn</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
